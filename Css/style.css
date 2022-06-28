@@ -54,11 +54,15 @@ header {
 }
 
 .hero {
+    background-image: url("../Images/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 650px) calc(50% + 120px );
     padding-top: 125px;
 }
 
 .hero-box {
     display: flex;
+
 }
 
 .hero-left {
@@ -96,13 +100,24 @@ header {
 }
 
 .hero-link {
-    display: block;
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 22px;
     line-height: 40px;
     color: #FFFFFF;
     text-decoration: none;
     transition: .5s;
+}
+
+.hero-link::after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 26px;
+    background-image: url("../Images/strelka.svg");
+    background-size: cover;
+    margin-left: 34px;
 }
 
 .hero-img {
@@ -247,6 +262,43 @@ header {
     padding-left: 31px;
 }
 
+.services-item::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url("../Images/career.svg");
+}
+.services-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url("../Images/Group.svg");
+}
+.services-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url("../Images/visa.svg");
+}
+.services-item:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url("../Images/home.svg");
+}
+.services-item:nth-child(5)::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url("../Images/airplane.svg");
+}
+
+
 .item-title {
     font-weight: 700;
     font-size: 24px;
@@ -268,12 +320,24 @@ header {
 }
 
 .item-box-link {
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     letter-spacing: 0.439286px;
     color: #717CFF;
     text-decoration: none;
+}
+
+.item-box-link::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    background-image: url("../Images/strelka.svg");
+    background-size: cover;
+    margin-left: 21px;
 }
 
 .item-box-img {
@@ -327,6 +391,24 @@ header {
     padding-bottom: 62px;
 }
 
+.news-top-img {
+    width: 344px;
+    height: 224px;
+    background-image: url("../Images/come.jpg");
+}
+
+.news-top-img2 {
+    width: 344px;
+    height: 224px;
+    background-image: url("../Images/trump.jpg");
+}
+
+.news-top-img3 {
+    width: 344px;
+    height: 224px;
+    background-image: url("../Images/how.jpg");
+}
+
 .news-item:nth-child(1) {
     margin-left: 0;
 }
@@ -367,12 +449,23 @@ header {
 }
 
 .news-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 22px;
     line-height: 40px;
     color: #FFFFFF;
     text-decoration: none;
-    margin-right: 41px;
+}
+
+.news-link::after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 26px;
+    background-image: url("../Images/strelka.svg");
+    background-size: cover;
+    margin-left: 34px;
 }
 
 .upcoming {
@@ -428,6 +521,28 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 29px;
+}
+
+.upcoming-top12 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.upcoming-top1::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url("../Images/Group 2.svg");
+}
+
+.upcoming-top12::before {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 76px;
+    background-image: url("../Images/17.svg");
 }
 
 .up-top-title {
@@ -589,6 +704,27 @@ header {
 .test-top {
     display: flex;
     align-items: center;
+}
+
+.test-top2 {
+    display: flex;
+    align-items: center;
+}
+
+.test-top::before {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: url("../Images/girl-photo.svg");
+}
+
+.test-top2::before {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: url("../Images/boy.svg");
 }
 
 .test-text {
